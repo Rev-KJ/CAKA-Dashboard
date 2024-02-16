@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+    <p>Here's What Happened Today.</p>
+    <form action="/submit" method="post">
+        <label for="total_income">Total Income:</label><br>
+        <input type="text" id="total_income" name="total_income"><br>
+        <label for="highest_spend">Highest Spend:</label><br>
+        <input type="text" id="highest_spend" name="highest_spend"><br>
+        <label for="best_selling_item">Best Selling Item:</label><br>
+        <input type="text" id="best_selling_item" name="best_selling_item"><br>
+        <label for="worst_selling_item">Worst Selling Item:</label><br>
+        <input type="text" id="worst_selling_item" name="worst_selling_item"><br>
+        <label for="avg_basket_spend">Average Basket Spend:</label><br>
+        <input type="text" id="avg_basket_spend" name="avg_basket_spend"><br>
+        <label for="staff_mvp">Staff MVP:</label><br>
+        <input type="text" id="staff_mvp" name="staff_mvp"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="charts-container">
+    <img class="chart" src="{{ url_for('static', filename='Friday-Drink.png') }}" alt="Drinks">
+    <img class="chart" src="{{ url_for('static', filename='Friday-Food.png') }}" alt="Food">
+    <img class="chart" src="{{ url_for('static', filename='Friday-Pie-Chart.png') }}" alt="Pie">
+</div>
+</div>
+</body>
+</html>

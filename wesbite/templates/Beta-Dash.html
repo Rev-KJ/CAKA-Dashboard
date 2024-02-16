@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="company-info">
+        <h1>CAKA Group Dashboard</h1>
+        <img src="{{ url_for('static', filename='Megabytes-Logo.png') }}" alt="Company Logo">
+        <div class="date-selector">
+            <h2>Date Selector</h2>
+            <form>
+                <label for="selectedDate">Select Date:</label>
+                <input type="date" id="selectedDate" name="selectedDate">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="day-container">
+        <!-- Links to each day's page -->
+        <a href="Beta-Monday.html">Monday</a>
+        <a href="Beta-Tuesday.html">Tuesday</a>
+        <a href="Beta-Wednesday.html">Wednesday</a>
+        <a href="Beta-Thursday.html">Thursday</a>
+        <a href="Beta-Friday.html">Friday</a>
+        <a href="Beta-Saturday.html">Saturday</a>
+        <a href="Beta-Sunday.html">Sunday</a>
+    </div>
+</main>
+
+<p class="centered-text">
+    Megabytes Cafe is a coffee shop located in the heart of the city.
+</p>
+<p class="centered-text">
+    We offer a wide variety of coffee, tea, and pastries, 
+</p>
+<p class="centered-text"> 
+    Our menu is always changing to reflect the latest trends and flavours.
+</p>
+
+<footer>
+</footer>
+</body>
+</html>
